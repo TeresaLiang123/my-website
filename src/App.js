@@ -1,6 +1,7 @@
 import './App.css';
 import './index.css';
 import React from 'react';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 function App() {
   return (
@@ -33,7 +34,7 @@ const tabs = [
   {
     title: 'About Me',
     img: './piplup.gif',
-    page: './home.html',
+    page: '',
     id: 1,
   },
   {
@@ -137,7 +138,7 @@ const Social = () => {
     <a href="https://www.linkedin.com/in/liang-teresa/" target="https://www.linkedin.com/in/liang-teresa/">
       <img src="./linkedin-icon.png" width="50" height="50"></img>
     </a>
-    <a href="" target="">
+    <a href="mailto:teresaliangmain@gmail.com" target="">
       <img src="./gmail-icon.png" width="50" height="50"></img>
     </a>
     </div>);

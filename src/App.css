@@ -21,7 +21,6 @@ body {
 
 :root {
   font-family: "Poke-font";
-  font-weight: 400px;
 }
 
 .App {
@@ -145,6 +144,7 @@ a:link {
 .value {
   color: rgb(0, 0, 0);
   font-size: 20px;
+  text-shadow: 0.3px 0.3px;
   padding: 12px;
 }
 
