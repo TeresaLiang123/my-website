@@ -12,9 +12,7 @@ function App() {
         <div className="description">
           <Description></Description>
         </div>
-        <div className="pic">
-          <Picture></Picture>
-        </div>
+        <Picture></Picture>
       </div>
     </div>
   );
@@ -109,9 +107,9 @@ const Information = ({prompt, value, id}) => {
 }
 
 const Picture = () => {
-  return(<section className="pic">
-    <img src="./t.jpg"></img>
-  </section>);
+  return(
+    <img className="pic" src="./t.jpg"></img>
+  );
 }
 
 export default App;
