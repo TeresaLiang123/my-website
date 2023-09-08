@@ -23,13 +23,13 @@ function App() {
 const tabs = [
   {
     title: 'About Me',
-    img: './pngfind.com-pokemon-pixel-png-3370273.png',
+    img: './piplup.gif',
     page: './home.html',
     id: 1,
   },
   {
     title: 'Projects',
-    img: './pngfind.com-pokemon-pixel-png-3370273.png',
+    img: './piplup.gif',
     page: './home.html',
     id: 2,
   },
@@ -95,7 +95,7 @@ const Links = ({page}) => {
 const Description = () => {
   return(
     descriptions.map((descr) => {
-      return(<Information prompt= {descr.prompt} value={descr.value}></Information>);
+      return(<Information prompt={descr.prompt} value={descr.value}></Information>);
     })
   );
 }
@@ -109,15 +109,16 @@ const Information = ({prompt, value, id}) => {
 }
 
 const Picture = () => {
-  return(
-    <img className="pic" src="./t.jpg"></img>
+  return(<section>
+      <img className="pic" src="./t.jpg"></img>
+    </section>
   );
 }
 
 const Social = () => {
-  return(<section className="icons">
+  return(<div className="icons">
     <a href="https://github.com/TeresaLiang123/Projects" target="https://github.com/TeresaLiang123/Projects">
-      <img src="./github-icon.png" width="50" height="50"></img>
+      <img src="./github-icon.png" width="50" height="50" className="icon"></img>
     </a>
     <a href="https://www.linkedin.com/in/liang-teresa/" target="https://www.linkedin.com/in/liang-teresa/">
       <img src="./linkedin-icon.png" width="50" height="50"></img>
@@ -125,7 +126,7 @@ const Social = () => {
     <a href="" target="">
       <img src="./gmail-icon.png" width="13%"></img>
     </a>
-  </section>);
+    </div>);
 }
 
 export default App;
