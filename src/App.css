@@ -5,25 +5,46 @@
 }
 
 body {
-  font-family: system-ui, apply-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 'sans-serif';
+  /* font-family: system-ui, apply-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 'sans-serif'; */
+  font-family: "Poke-font";
   color:black;
+  background-image: url("ruby-cloudy.gif");
+  background-repeat: no-repeat;
+  background-size: 107%;
+}
+
+@font-face {
+  font-family: "Poke-font";
+  src: url(pkmndp.ttf);
+  color:black;
+}
+
+:root {
+  font-family: "Poke-font";
+  font-weight: 400px;
 }
 
 .App {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .tabs {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  text-shadow: 1px 1px;
+  margin-top: 40px;
+  border-radius: 30px;
+  width: 500px;
+  justify-content: space-between;
 }
 
 .tab {
   display: flex;
   flex-direction: column;
+  
 }
 
 .tab-name {
@@ -31,33 +52,63 @@ body {
   color: black;
 }
 
-.box {
-  /* outline: solid rgb(5, 69, 88); */
+.piplup {
+  margin-right: 10px;
+}
+
+.button {
+  font-family: "Poke-font";
+  src: url(pkmndp.ttf);
+
+  cursor: pointer;
   border-radius: 30px;
-  margin-top: 50px;
+  padding: 10px;
+  border-color: rgb(83, 82, 82);
+  outline: solid rgb(255, 255, 255);
+  background-color: #a0d0f0;
+  box-shadow: -5px 3px rgb(255, 255, 255);
+  text-shadow: 1px 1px;
+}
+
+.button:hover {
+  background-color: #5090e0;
+}
+
+a:link { 
+  text-decoration: none; 
 }
 
 .card {
   display: flex;
   flex-direction: row;
-  outline: solid rgb(0, 0, 0);
+  outline: solid rgb(255, 255, 255);
   background-color:#5090e0;
   justify-content: center;
 
   border-radius: 30px;
-  max-width: 70%;
-  gap: 100px;
+  
+  background-image: url(pokeball.png);
+  background-position-x: 100%;
+  background-size: 70%;
+  background-position: right 550px bottom 50px;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+}
+
+.grey-outline {
+  background-color: rgb(83, 82, 82);
+  display:flex;
+  flex-direction: column;
   margin-top: 50px;
-  margin-bottom: 100px;
-  margin-right: 80px;
-  margin-left: 80px;
+  padding: 8px;
+  border-radius: 40px;
+  outline: solid white;
 }
 
 .description {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* outline: solid rgb(5, 69, 88); */
   width: 750px;
   padding: 10px;
 }
@@ -68,14 +119,16 @@ body {
   justify-content: space-between;
   margin-bottom: 10px;
   margin-top: 10px;
-  background-color: #a0d0f0;
+  background-color: rgba(160,208,240, 0.6);
   border-radius: 30px;
+  
 }
 
 .identity {
+  text-shadow: 1px 1px;
   color: black;
   font-size: 50px;
-  background-color: #a0d0f0;
+  background-color: rgba(160,208,240, 0.6);
   border-radius: 30px;
   padding: 10px;
   margin-top: 25px;
@@ -86,6 +139,7 @@ body {
   color: black;
   font-size: 20px;
   padding: 12px;
+  text-shadow: 1px 1px;
 }
 
 .value {
@@ -95,10 +149,12 @@ body {
 }
 
 .pic {
-  height: 435px;
+  height: 445px;
   border-radius: 30px;
-  margin-top: 25px;
+  margin-top: 35px;
   margin-bottom: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .icons{
@@ -106,13 +162,9 @@ body {
   flex-direction: row;
   gap: 40px;
   padding: 10px;
-  background-color: #a0d0f0;
+  background-color: rgba(160,208,240, 0.6);
   border-radius: 30px;
   margin-bottom: 25px;
   margin-top: 10px;
   justify-content: center;
-}
-
-.icons a {
-  display: block;
 }

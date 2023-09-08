@@ -8,15 +8,24 @@ function App() {
       <div className='tabs'>
         <Tabs></Tabs>
       </div>
-      <div className="card">
-        <div className="description">
-          <span className="identity">Identification</span>
-          <Description></Description>
-          <Social></Social>
+      <div className="grey-outline">
+        <div className="card">
+            <div className="description">
+              <span className="identity">Identification</span>
+              <Description></Description>
+              <Social></Social>
+            </div>
+            <Picture></Picture>
         </div>
-        <Picture></Picture>
       </div>
+
     </div>
+  );
+}
+
+const pokemarch = () => {
+  return(
+    <img></img>
   );
 }
 
@@ -30,7 +39,7 @@ const tabs = [
   {
     title: 'Projects',
     img: './piplup.gif',
-    page: './home.html',
+    page: 'https://www.amazon.com/ref=nav_logo',
     id: 2,
   },
 ]
@@ -49,7 +58,7 @@ const descriptions = [
   },
   {
     prompt: 'School & Graduation: ',
-    value: 'Northeastern University Dec. 2024',
+    value: 'Northeastern University, Dec. 2024',
     id: 5,
   },
   {
@@ -64,20 +73,25 @@ const descriptions = [
   },
 ]
 
-
 const Tabs = () => {
   return (
       tabs.map((tab) => {
-          return (<Tab title={tab.title} img={tab.img} page={tab.page} id={tab.id}></Tab>);
+          return (<section className="tab">
+            <Tab title={tab.title} img={tab.img} page={tab.page} id={tab.id}></Tab>
+          </section>);
       })
   );
 };
 
 const Tab = ({title, img, page, id}) => {
-  return (<div className="box">
-      <img src={img} alt='Pixel Piplup' width="50" height="50"></img>
-      <span className="tab-name">{title}</span>
-      <Links page={page}></Links>
+  return (<div>
+    <button class="button">
+      <a href={page}>
+      <img src={img} alt='Pixel Piplup' className="piplup"></img>
+        <span className="tab-name">{title}</span>
+        <Links page={page}></Links>
+      </a>
+    </button>
   </div>
   );
 
@@ -124,7 +138,7 @@ const Social = () => {
       <img src="./linkedin-icon.png" width="50" height="50"></img>
     </a>
     <a href="" target="">
-      <img src="./gmail-icon.png" width="13%"></img>
+      <img src="./gmail-icon.png" width="50" height="50"></img>
     </a>
     </div>);
 }
