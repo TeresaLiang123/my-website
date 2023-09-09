@@ -1,9 +1,25 @@
 import React from 'react';
-import Header from '../components/Header'
+import '../App.css';
+import Tabs from '../components/tabs';
+import ProjList from '../components/projectList';
+import Gif from '../components/gif'
 
-function Projects() {
+const Projects = () => {
   return (
-    <div>My Projects</div>
+    <div className="App">
+      <div className='tabs'>
+        <Tabs></Tabs>
+      </div>
+      <div className="projectDex">
+        <div className="gif">
+          {/* gif */}
+          <Gif></Gif>
+        </div>
+        <div className="proj-list">
+          <ProjList></ProjList>
+        </div>
+      </div>
+    </div>
   )
 }
 
