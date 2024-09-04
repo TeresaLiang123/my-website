@@ -19,7 +19,7 @@ const descriptions = [
     },
     {
       prompt: 'Technical Skills: ',
-      value: 'Java, Python, CSS, HTML, JavaScript',
+      value: 'Java, Python, CSS, HTML, JavaScript, React',
       id: 6,
     },
     {
