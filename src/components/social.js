@@ -8,7 +8,7 @@ const Social = () => {
       <a href="https://www.linkedin.com/in/liang-teresa/" target="https://www.linkedin.com/in/liang-teresa/">
         <img src="./linkedin-icon.png" width="50" height="50"></img>
       </a>
-      <a href="mailto:teresaliangmain@gmail.com" target="">
+      <a href="mailto:liangte52@gmail.com" target="">
         <img src="./gmail-icon.png" width="50" height="50"></img>
       </a>
       </div>);

@@ -1,9 +1,8 @@
 import React from 'react';
 
-const Gif = () => {
-    return(<div className="display">
-      <img src="./piplup.gif" alt="temp" className="gif"></img>
-    </div>
+const Gif = ({ image }) => {
+    return(
+      <img src={image} alt="temp" className="gifDisplay"></img>
     )
   }
 

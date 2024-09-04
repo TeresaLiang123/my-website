@@ -15,7 +15,7 @@ function About() {
       </div>
       <div className="grey-outline">
         <div className="card">
-            <div className="description">
+            <div className="descriptionId">
               <span className="identity">Identification</span>
               <Description></Description>
               <Social></Social>
