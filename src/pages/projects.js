@@ -92,12 +92,10 @@ const Projects = () => {
           <div className="infoTitleBox">
             <h1 className="infoTitle">{name}</h1>
           </div>
-          <div className="gifBackground">
+          <div className="infoBackground">
             <div className="gif">
               <Gif image={gif}></Gif>
             </div>
-          </div>
-          <div className="infoBackground">
             <h2 className="infoTitle">Info</h2>
             <p className="description">Completion: {date}</p>
             <p className="description">{info}</p>
