@@ -6,12 +6,14 @@ const tabs = [
     {
       title: 'About Me',
       img: './piplup.gif',
+      pokemon: 'piplup',
       page: './about',
       id: 1,
     },
     {
       title: 'Projects',
       img: './piplup.gif',
+      pokemon: 'piplup',
       page: './projects',
       id: 2,
     },
@@ -21,17 +23,17 @@ const tabs = [
     return (
         tabs.map((tab) => {
             return (
-              <Tab title={tab.title} img={tab.img} page={tab.page} id={tab.id}></Tab>
+              <Tab title={tab.title} img={tab.img} page={tab.page} id={tab.id} pokemon={tab.pokemon}></Tab>
             );
         })
     );
   };
   
-  const Tab = ({title, img, page, id}) => {
+  const Tab = ({title, img, page, id, pokemon}) => {
     return (<div>
       <button class="button">
         <a href={page}>
-        <img src={img} alt='Pixel Piplup' className="piplup"></img>
+        <img src={img} alt='Pixel' className={pokemon}></img>
           <span className="tab-name">{title}</span>
           <Links page={page}></Links>
         </a>
