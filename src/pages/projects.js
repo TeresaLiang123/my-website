@@ -80,8 +80,7 @@ const Projects = () => {
       })
     )
   }
-
-
+  
   return (
     <div className="App">
       <div className='tabs'>
