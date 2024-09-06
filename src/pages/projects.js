@@ -34,7 +34,7 @@ const Projects = () => {
       lang: "./python.png",
       img: "./WebCrawler.png",
       date: "March 2023",
-      info: "A web crawler designed to navigate a website and search for hidden flags."
+      info: "A web crawler designed to navigate a website and search for hidden flags that are a random sequence of numbers. The crawler traverses through every link within the given website and checks every line of code to find the flags."
     },
     {
       name: "Image Processing Application",
@@ -50,7 +50,7 @@ const Projects = () => {
       lang: "./java.png",
       img: "./MarbleSolitaire.png",
       date: "May-June 2022",
-      info: "A single player game with multiple different versions of Marble Solitaire that is played in the console."
+      info: "A single player game with multiple different versions of Marble Solitaire that is played in the console. The goal for players is to have one marble left on the board. Players can do so with similar gameplay as checkers. Players interact with the console to insert the cordinates of their selected marble of their choice and it's placement cordinates."
     },
     {
       name: "Pokemon Website",
