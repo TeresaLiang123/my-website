@@ -68,7 +68,7 @@ function About() {
                     <Picture className="picture"></Picture>
               </div>
         </ReactCardFlip>
-        <img onClick={flip} className="sign" src='./woodenSign.png'></img>
+        <img onClick={flip} className="sign" src='./woodenSign.png' alt="sign"></img>
         <p className='signWords'>Click to flip!</p>
     </div>
   );
