@@ -24,7 +24,7 @@ const descriptions = [
     },
     {
       prompt: 'Softwares: ',
-      value: 'IntelliJ, PyCharm, Eclipse, Visual Studio Code, Atom, Windows 10',
+      value: 'IntelliJ, PyCharm, Eclipse, Visual Studio Code, Atom, Windows 11',
       id: 7,
     },
   ]

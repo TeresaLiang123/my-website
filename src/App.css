@@ -2,15 +2,17 @@
   margin: 0;
   padding: 10;
   box-sizing: border-box;
+  cursor: url('/public/Pokémon\ PC\ Box\ Hand.cur'), auto !important;
 }
 
-body {
+html, body {
   /* font-family: system-ui, apply-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 'sans-serif'; */
   font-family: "Poke-font";
   color:black;
-  background-color: rgb(45, 45, 45);
+  background-image: url('/public/background.jpg');
   background-repeat: no-repeat;
-  background-size: 107%;
+  background-size: 100%;
+  overflow: hidden;
 }
 
 @font-face {
@@ -70,11 +72,59 @@ body {
 }
 
 .button:hover {
-  background-color: #7bb3f7;
+  background-color: #ffd166;
+}
+
+.aboutMeNextButton {
+  font-family: "Poke-font";
+  src: url(pkmndp.ttf);
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.nextButton {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.hoverScale12:hover {
+  transform: scale(1.2);
+}
+
+.hoverScale11:hover {
+  transform: scale(1.1);
+}
+
+.hoverScale105:hover {
+  transform: scale(1.05);
 }
 
 a:link { 
   text-decoration: none; 
+}
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 180px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 3px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  margin-left: -65px;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
 }
 
 .card {
@@ -94,11 +144,6 @@ a:link {
   background-repeat: no-repeat;
   margin-top: 50px;
   height: 600px;
-  /* flex-direction: column;
-  margin-top: 50px;
-  padding: 8px;
-  border-radius: 40px;
-  outline: solid white; */
 }
 
 .black-outline {
@@ -116,8 +161,11 @@ a:link {
   flex-direction: column;
   justify-content: center;
   width: 750px;
-  padding: 10px;
+  padding-left: 30px;
+
 }
+
+
 
 .info {
   display: flex;
@@ -136,10 +184,18 @@ a:link {
   font-size: 25px;
   background-color: rgba(160,208,240, 0.6);
   border-radius: 30px;
-  padding: 10px;
+  padding: 30px;
   margin-top: 25px;
   margin-bottom: 10px;
+
+  
+  height: 475px;
+  overflow-y: scroll;
+
+  scrollbar-color: rgba(0,0,0,0.3) transparent;
+  
 }
+
 
 .identity {
   text-shadow: 1px 1px;
@@ -167,7 +223,7 @@ a:link {
 }
 
 .pic {
-  height: 445px;
+  height: 460px;
   border-radius: 30px;
   margin-top: 80px;
   margin-bottom: 25px;
@@ -179,7 +235,7 @@ a:link {
 .icons{
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 150px;
   padding: 10px;
   background-color: rgba(160,208,240, 0.6);
   border-radius: 30px;
@@ -187,6 +243,46 @@ a:link {
   margin-top: 10px;
   justify-content: center;
 }
+
+.mouseIcon {
+  position: absolute;
+  height: 150px;
+  left: 1250px;
+  top: 640px;
+  animation: imageScale 3s ease-in-out infinite;
+}
+
+@keyframes imageScale{
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.sign {
+  position:absolute;
+  height: 270px;
+  left: 1230px;
+  top: 600px;
+  rotate: 20deg;
+}
+
+.signWords {
+  position: absolute;
+  font-size: 23px;
+  font-family: "Poke-font";
+  color: black;
+  left: 1330px;
+  top: 660px;
+  rotate: 20deg;
+  animation: imageScale 3s infinite;
+}
+
 
 /* Projects page */
 
@@ -202,11 +298,13 @@ a:link {
   background-color: rgba(160,208,240, 0.6);
   height: 210px;
   width: 400px;
+  border-radius: 0px 30px 30px 30px;
 }
 
 .gifDisplay {
   height: 210px;
   width: 400px;
+  border-radius: 0px 30px 30px 30px;
 }
 
 /* .gifBackground {
@@ -224,12 +322,14 @@ a:link {
   padding-bottom: 15px;
   height: 500px;
   border: 2px solid #000000;
+  border-radius: 0px 30px 30px;
 }
 
 .projTitle {
   font-family: "Poke-font";
   color: black;
   font-size: large;
+  
 }
 
 .projectDex {
@@ -252,6 +352,7 @@ a:link {
   margin-left: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
+  
 }
 
 .description {
@@ -313,7 +414,7 @@ a:link {
 }
 
 .button-proj:hover {
-  background-color: #7bb3f7;
+  background-color: #ffd166;
 }
 
 .logo {

@@ -6,10 +6,10 @@ import Links from '../components/links';
 
 const Projects = () => {
   
-  const [gif, setGif] = useState("");
-  const [info, setInfo] = useState("");
-  const [name, setName] = useState("");
-  const [date, setDate] = useState("");
+  const [gif, setGif] = useState("Hangman.png");
+  const [info, setInfo] = useState("A full-stack Hangman game with a unique feature that allows players to compete against each other in guessing the word. Players are connected through Covey Town, a virtual platform that facilitates user interactions through various activities.");
+  const [name, setName] = useState("Hangman Covey Town");
+  const [date, setDate] = useState("October-December 2024");
 
   const list = [
     {
@@ -68,7 +68,7 @@ const Projects = () => {
       list.map((proj) => {
         return(
             <div>
-              <button className="button-proj" onMouseEnter={() => {setGif(proj.img); setInfo(proj.info); setName(proj.name); setDate(proj.date)}} onMouseLeave={() => {setGif(proj.img); setInfo(proj.info); setName(proj.name); setDate(proj.date)}}>
+              <button className="button-proj hoverScale105" onMouseEnter={() => {setGif(proj.img); setInfo(proj.info); setName(proj.name); setDate(proj.date)}} onMouseLeave={() => {setGif(proj.img); setInfo(proj.info); setName(proj.name); setDate(proj.date)}}>
                 <a href={proj.url}>
                   <img src={proj.lang} alt="logo" className="logo"></img>
                   <span className="proj-name">{proj.name}</span>
