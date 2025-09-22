@@ -1,5 +1,3 @@
-import React from 'react';
-
 // contents in description of card
 const descriptions = [
     {

@@ -1,7 +1,7 @@
 // import './App.css';
 // import './index.css';
 // import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import {React,useState} from 'react';
+import {useState} from 'react';
 import Tabs from '../components/tabs'
 import Description from '../components/description';
 import Social from '../components/social';

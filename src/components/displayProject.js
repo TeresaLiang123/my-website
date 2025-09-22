@@ -3,9 +3,6 @@ const DisplayProject = () => {
     const spanRef = useRef(null);
     
     useEffect(() => {
-        const handleHover = (e) => {
-            
-        };
         btnRef.current.addEventListener("mousemove", handleMouseMove);
         
         return () => {
