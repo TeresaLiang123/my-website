@@ -1,5 +1,7 @@
 import Links from '../components/links';
-
+import { Link
+  
+ } from 'react-router-dom';
 const tabs = [
     {
       title: 'About Me',
@@ -30,11 +32,11 @@ const tabs = [
   const Tab = ({title, img, page, id, pokemon}) => {
     return (<div>
       <button class="button hoverScale11">
-        <a href={page} rel="noreferrer">
+        <Link to={page} rel="noreferrer">
         <img src={img} alt='Pixel' className={pokemon}></img>
           <span className="tab-name">{title}</span>
           <Links page={page}></Links>
-        </a>
+        </Link>
       </button>
     </div>
     );
