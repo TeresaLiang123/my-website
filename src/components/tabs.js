@@ -1,6 +1,5 @@
 import React from "react";
 import Links from '../components/links';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 const tabs = [
     {
