@@ -5,14 +5,14 @@ const tabs = [
       title: 'About Me',
       img: './piplup.gif',
       pokemon: 'piplup',
-      page: './about',
+      page: '/about',
       id: 1,
     },
     {
       title: 'Projects',
       img: './piplup.gif',
       pokemon: 'piplup',
-      page: './projects',
+      page: '/projects',
       id: 2,
     },
   ]
@@ -30,11 +30,11 @@ const tabs = [
   const Tab = ({title, img, page, id, pokemon}) => {
     return (<div>
       <button class="button hoverScale11">
-        <Link to={page}>
+        <a href={page}>
         <img src={img} alt='Pixel' className={pokemon}></img>
           <span className="tab-name">{title}</span>
           <Links page={page}></Links>
-        </Link>
+        </a>
       </button>
     </div>
     );

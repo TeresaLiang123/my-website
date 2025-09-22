@@ -69,11 +69,11 @@ const Projects = () => {
         return(
             <div>
               <button className="button-proj hoverScale105" onMouseEnter={() => {setGif(proj.img); setInfo(proj.info); setName(proj.name); setDate(proj.date)}} onMouseLeave={() => {setGif(proj.img); setInfo(proj.info); setName(proj.name); setDate(proj.date)}}>
-                <Link to={proj.url}>
+                <a href={proj.url} target="_blank" rel="noreferrer">
                   <img src={proj.lang} alt="logo" className="logo"></img>
                   <span className="proj-name">{proj.name}</span>
                   <Links page={proj.url}></Links>
-                </Link>
+                </a>
               </button>
             </div>
             )
