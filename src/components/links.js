@@ -1,7 +1,7 @@
 const Links = ({page}) => {
     return (<section>
         <ul>
-            <a href={page}> </a>
+            <Link to={page}> </Link>
         </ul>
     </section>);
   }
