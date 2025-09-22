@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://us-east.storage.cloudconvert.com/tasks/3167f3af-588c-4a1f-b320-c22c41555a6a/pokeball.ico?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20250922%2Fva%2Fs3%2Faws4_request&X-Amz-Date=20250922T220544Z&X-Amz-Expires=86400&X-Amz-Signature=6fb549cf90cdec87ecea99bb2d9cd861ee4ef5662cfd3866ae05764217442865&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22pokeball.ico%22&response-content-type=image%2Fvnd.microsoft.icon&x-id=GetObject

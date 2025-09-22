@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://us-east.storage.cloudconvert.com/tasks/7470f21b-4b78-4659-9269-e7a0a9962aea/piplup.ico?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20250922%2Fva%2Fs3%2Faws4_request&X-Amz-Date=20250922T215649Z&X-Amz-Expires=86400&X-Amz-Signature=619876e732427cc72e5cb4b52969311633490a6d701dc00bb4a0d85ac6e031e2&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22piplup.ico%22&response-content-type=image%2Fvnd.microsoft.icon&x-id=GetObject
