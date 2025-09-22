@@ -30,7 +30,7 @@ const tabs = [
   const Tab = ({title, img, page, id, pokemon}) => {
     return (<div>
       <button class="button hoverScale11">
-        <a href={page}>
+        <a href={page} rel="noreferrer">
         <img src={img} alt='Pixel' className={pokemon}></img>
           <span className="tab-name">{title}</span>
           <Links page={page}></Links>
