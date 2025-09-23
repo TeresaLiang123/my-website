@@ -20,7 +20,7 @@ const Projects = () => {
       img: "Hangman.png",
       date: "October-December 2024",
       info: "A full-stack Hangman game with a unique feature that allows players to compete against each other in guessing the word. Players are connected through Covey Town, a virtual platform that facilitates user interactions through various activities.",
-      play: "app.covey.town"
+      play: "https://app.covey.town/"
     },
     {
       name: "MyMovieList Website",
