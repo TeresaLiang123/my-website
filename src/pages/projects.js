@@ -10,6 +10,7 @@ const Projects = () => {
   const [info, setInfo] = useState("A full-stack Hangman game with a unique feature that allows players to compete against each other in guessing the word. Players are connected through Covey Town, a virtual platform that facilitates user interactions through various activities.");
   const [name, setName] = useState("Hangman Covey Town");
   const [date, setDate] = useState("October-December 2024");
+  const [play, setPlay] = useState("app.covey.town")
 
   const list = [
     {
@@ -18,7 +19,8 @@ const Projects = () => {
       lang: "./react.png",
       img: "Hangman.png",
       date: "October-December 2024",
-      info: "A full-stack Hangman game with a unique feature that allows players to compete against each other in guessing the word. Players are connected through Covey Town, a virtual platform that facilitates user interactions through various activities."
+      info: "A full-stack Hangman game with a unique feature that allows players to compete against each other in guessing the word. Players are connected through Covey Town, a virtual platform that facilitates user interactions through various activities.",
+      play: "app.covey.town"
     },
     {
       name: "MyMovieList Website",
@@ -26,7 +28,8 @@ const Projects = () => {
       lang: "./react.png",
       img: "./MyMovieList.png",
       date: "December 2024",
-      info:"A full-stack movie website where users can search for movies, like their favorites, and sign up or log into their accounts."
+      info:"A full-stack movie website where users can search for movies, like their favorites, and sign up or log into their accounts.",
+      play: "https://main--chic-mochi-74b40d.netlify.app/"
     },
     {
       name: "Web Crawler",
@@ -34,7 +37,8 @@ const Projects = () => {
       lang: "./python.png",
       img: "./WebCrawler.png",
       date: "March 2023",
-      info: "A web crawler designed to navigate a website and search for hidden flags that are a random sequence of numbers. The crawler traverses through every link within the given website and checks every line of code to find the flags."
+      info: "A web crawler designed to navigate a website and search for hidden flags that are a random sequence of numbers. The crawler traverses through every link within the given website and checks every line of code to find the flags.",
+      play: ""
     },
     {
       name: "Image Processing Application",
@@ -42,7 +46,8 @@ const Projects = () => {
       lang: "./java.png",
       img: "./ImageProcessor.png",
       date: "June 2022",
-      info: "An image processor that lets users load an image or TIFF file from their computer. Users can apply various effects such as flip, grayscale, intensity adjustment, luma correction, brightness, blur, sharpen, sepia tone, and view a histogram displaying the frequency distribution of their image."
+      info: "An image processor that lets users load an image or TIFF file from their computer. Users can apply various effects such as flip, grayscale, intensity adjustment, luma correction, brightness, blur, sharpen, sepia tone, and view a histogram displaying the frequency distribution of their image.",
+      play: ""
     },
     {
       name: "Marble Solitaire",
@@ -50,7 +55,8 @@ const Projects = () => {
       lang: "./java.png",
       img: "./MarbleSolitaire.png",
       date: "May-June 2022",
-      info: "A single player game with multiple different versions of Marble Solitaire that is played in the console. The goal for players is to have one marble left on the board. Players can do so with similar gameplay as checkers. Players interact with the console to insert the cordinates of their selected marble of their choice and it's placement cordinates."
+      info: "A single player game with multiple different versions of Marble Solitaire that is played in the console. The goal for players is to have one marble left on the board. Players can do so with similar gameplay as checkers. Players interact with the console to insert the cordinates of their selected marble of their choice and it's placement cordinates.",
+      play: ""
     },
     {
       name: "Pokemon Website",
@@ -58,7 +64,8 @@ const Projects = () => {
       lang: "./html.png",
       img: "./PokemonGuide.png",
       date: "January 2021",
-      info: "A fun website for Pokémon enthusiasts to explore information on specific generations of the game."
+      info: "A fun website for Pokémon enthusiasts to explore information on specific generations of the game.",
+      play: ""
     }
   ]
   
@@ -68,7 +75,7 @@ const Projects = () => {
       list.map((proj) => {
         return(
             <div>
-              <button className="button-proj hoverScale105" onMouseEnter={() => {setGif(proj.img); setInfo(proj.info); setName(proj.name); setDate(proj.date)}} onMouseLeave={() => {setGif(proj.img); setInfo(proj.info); setName(proj.name); setDate(proj.date)}}>
+              <button className="button-proj hoverScale105" onMouseEnter={() => {setGif(proj.img); setInfo(proj.info); setName(proj.name); setDate(proj.date)}} onMouseLeave={() => {setGif(proj.img); setInfo(proj.info); setName(proj.name); setDate(proj.date); setPlay(proj.play)}}>
                 <a href={proj.url} target="_blank" rel="noreferrer">
                   <img src={proj.lang} alt="logo" className="logo"></img>
                   <span className="proj-name">{proj.name}</span>
@@ -78,6 +85,14 @@ const Projects = () => {
             </div>
             )
       })
+    )
+  }
+
+  function isPlayable({playLink}) {
+    return(
+      <>
+        {playLink.length > 0 ? (<a className="clickToPlay" href={playLink} target="_blank" rel="noreferrer">Click here to check out project</a>) : (<></>)}
+      </>
     )
   }
   
@@ -96,6 +111,7 @@ const Projects = () => {
               <Gif image={gif}></Gif>
             </div>
             <h2 className="infoTitle">Info</h2>
+            <>{isPlayable({playLink: play})}</>
             <p className="description">Completion: {date}</p>
             <p className="description">{info}</p>
           </div>
