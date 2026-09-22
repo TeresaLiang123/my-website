@@ -12,7 +12,7 @@ const descriptions = [
     },
     {
       prompt: 'School & Graduation: ',
-      value: 'Northeastern University, Dec. 2024',
+      value: 'Northeastern University, Dec. 2025',
       id: 5,
     },
     {
